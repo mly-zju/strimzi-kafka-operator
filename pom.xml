@@ -92,8 +92,8 @@
         <quartz.version>2.5.0</quartz.version>
         <opentelemetry.version>1.34.1</opentelemetry.version>
         <opentelemetry-alpha.version>${opentelemetry.version}-alpha</opentelemetry-alpha.version>
-        <jetty.version>12.0.22</jetty.version>
-        <javax-servlet.version>3.1.0</javax-servlet.version>
+        <jetty.version>12.0.35</jetty.version>
+        <jakarta-servlet.version>6.1.0</jakarta-servlet.version>
         <netty.version>4.2.13.Final</netty.version>
         <micrometer.version>1.14.5</micrometer.version>
         <commons-codec.version>1.13</commons-codec.version>
@@ -289,6 +289,11 @@
             <dependency>
                 <groupId>io.fabric8</groupId>
                 <artifactId>kubernetes-model-coordination</artifactId>
+                <version>${fabric8.kubernetes-model.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.fabric8</groupId>
+                <artifactId>kubernetes-model-gatewayapi</artifactId>
                 <version>${fabric8.kubernetes-model.version}</version>
             </dependency>
             <dependency>
@@ -739,9 +744,9 @@
                 <version>${jetty.version}</version>
             </dependency>
             <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>javax.servlet-api</artifactId>
-                <version>${javax-servlet.version}</version>
+                <groupId>jakarta.servlet</groupId>
+                <artifactId>jakarta.servlet-api</artifactId>
+                <version>${jakarta-servlet.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.dajudge.kindcontainer</groupId>
